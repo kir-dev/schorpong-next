@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "config:base",
+    "group:nodeJs",
+    "group:definitelyTyped",
+    "group:rubyOmniauth",
+    ":prHourlyLimit2"
+  ],
+  "prConcurrentLimit": 5,
+  "schedule": [
+    "before 2am"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "stabilityDays": 3
+    }
+  ]
+}
