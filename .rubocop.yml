@@ -1,0 +1,26 @@
+require: rubocop-rails
+# Global settings for all cops
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+    - '.github/**/*'
+# Cop specific settings
+Style/GuardClause:
+  MinBodyLength: 3
+Metrics/AbcSize:
+  Max: 25
+Metrics/BlockLength:
+  Max: 50
+Metrics/MethodLength:
+  Max: 20
+# Disabled cops
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false

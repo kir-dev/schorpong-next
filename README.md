@@ -47,3 +47,12 @@ rails db:setup
 
 Other useful commands are `rails db:create`, `db:migrate`, `db:seed` and `db:reset`.
 
+## Linting
+The project uses rubocop to enforce good quality code. On the local machine you can run rubocop to detect mistakes with
+```bash
+rubocop
+```
+And you can automatically fix minor mistakes with
+```bash
+rubocop -a
+```
