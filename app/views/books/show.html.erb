@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>Intro:</strong>
+  <%= @book.intro %>
+</p>
+
+<p>
+  <strong>Application deadline:</strong>
+  <%= @book.application_deadline %>
+</p>
+
+<p>
+  <strong>Event date:</strong>
+  <%= @book.event_date %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

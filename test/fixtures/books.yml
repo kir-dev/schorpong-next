@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  intro: MyString
+  application_deadline: 2021-10-21 22:00:18
+  event_date: 2021-10-21 22:00:18
+
+two:
+  name: MyString
+  intro: MyString
+  application_deadline: 2021-10-21 22:00:18
+  event_date: 2021-10-21 22:00:18
