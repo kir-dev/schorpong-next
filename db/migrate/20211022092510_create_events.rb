@@ -1,6 +1,6 @@
-class CreateBooks < ActiveRecord::Migration[6.1]
+class CreateEvents < ActiveRecord::Migration[6.1]
   def change
-    create_table :books do |t|
+    create_table :events do |t|
       t.string :name
       t.string :intro
       t.datetime :application_deadline

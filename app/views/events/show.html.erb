@@ -2,23 +2,23 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @book.name %>
+  <%= @event.name %>
 </p>
 
 <p>
   <strong>Intro:</strong>
-  <%= @book.intro %>
+  <%= @event.intro %>
 </p>
 
 <p>
   <strong>Application deadline:</strong>
-  <%= @book.application_deadline %>
+  <%= @event.application_deadline %>
 </p>
 
 <p>
   <strong>Event date:</strong>
-  <%= @book.event_date %>
+  <%= @event.event_date %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
