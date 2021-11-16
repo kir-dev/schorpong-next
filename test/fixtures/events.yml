@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: events
+#
+#  id                   :bigint           not null, primary key
+#  application_deadline :datetime
+#  event_date           :datetime
+#  intro                :string
+#  name                 :string
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#
+
+one:
+  name: MyString
+  intro: MyString
+  application_deadline: 2021-10-22 11:25:10
+  event_date: 2021-10-22 11:25:10
+
+two:
+  name: MyString
+  intro: MyString
+  application_deadline: 2021-10-22 11:25:10
+  event_date: 2021-10-22 11:25:10
