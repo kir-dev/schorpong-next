@@ -53,6 +53,15 @@ ActiveRecord::Schema.define(version: 2021_10_22_092510) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.string "intro"
+    t.datetime "application_deadline"
+    t.datetime "event_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -72,14 +81,6 @@ ActiveRecord::Schema.define(version: 2021_10_22_092510) do
     t.index ["slug"], name: "index_pages_on_slug", unique: true
   end
 
-  create_table "events", force: :cascade do |t|
-    t.string "name"
-    t.string "intro"
-    t.datetime "application_deadline"
-    t.datetime "event_date"
-    t.datetime "updated_at", precision: 6, null: false
-    t.datetime "created_at", precision: 6, null: false
-  end
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
 end
