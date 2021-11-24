@@ -31,6 +31,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Use Devise for authentication
 gem 'devise'
+# Use Omniauth for AuthSCH authentication
+gem 'omniauth'
+gem 'omniauth-authsch'
+gem 'omniauth-oauth2'
+gem 'omniauth-rails_csrf_protection'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
