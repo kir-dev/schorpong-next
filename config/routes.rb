@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :articles
+  devise_for :users
   resources :users
   resources :events
   resources :pages
