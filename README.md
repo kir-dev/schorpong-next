@@ -38,6 +38,10 @@ The database is accessible on port `5432`, so you must update the port in `confi
 
 After creating the database container you have to set up the database from the console.
 
+##AuthSCH setup
+Copy `.env.example` into `.env`.
+Get dev credentials from [authsch](auth.sch.bme.hu) and fill in the required environment variables.
+
 ## Set up the application
 
 To setup the database:
