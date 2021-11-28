@@ -13,7 +13,7 @@
 <p>
   <strong>Image:</strong>
   <%= link_to @article.image.filename, @article.image if @article.image.attached? %>
-  <%= image_tag(@article.image) %>
+  <%= image_tag(@article.image) if @article.image.attached? %>
 </p>
 
 <p>
