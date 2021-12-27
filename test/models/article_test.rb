@@ -2,12 +2,13 @@
 #
 # Table name: articles
 #
-#  id         :bigint           not null, primary key
-#  intro      :string
+#  id         :integer          not null, primary key
 #  title      :string
+#  intro      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+
 require "test_helper"
 
 class ArticleTest < ActiveSupport::TestCase
