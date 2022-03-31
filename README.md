@@ -1,5 +1,7 @@
 
-# README
+# Schorpong next
+
+This project is archived. The development of the schorpong project continues in the old repository.
 
 ## Tech stack
 - Ruby 3.0.2
